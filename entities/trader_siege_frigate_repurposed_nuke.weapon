@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "name": "weapon_name.repurposed_nuke",
+    "pitch_speed": 0.0,
+    "yaw_speed": 0.0,
+    "pitch_firing_tolerance": 67.5,
+    "yaw_firing_tolerance": 67.5,
+    "range": 2000.0,
+    "cooldown_duration": 10.0,
+    "uniforms_target_filter_id": "common_weapon",
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_shields",
+    "damage": 62.0,
+    "hull_armor_penetration": 50.0,
+    "tags": [
+        "missile",
+        "physical"
+    ],
+    "acquire_target_logic": "order_target_only",
+    "firing":
+    {
+        "firing_type": "spawn_torpedo",
+        "torpedo_firing_definition":
+        {
+            "spawned_unit": "trader_medium_torpedo",
+            "buff": "standard_torpedo",
+            "buff_data_source": "standard_torpedo_buff",
+            "damage_variable_id": "damage_amount",
+            "hull_armor_penetration_variable_id": "hull_armor_penetration_amount",
+            "duration_variable_id": "duration_amount",
+            "duration": 20.0
+        }
+    },
+    "modifiers": [
+    {
+        "modifier_type": "damage",
+        "value_behavior": "scalar",
+        "value": 0.06,
+        "prerequisites": [
+            ["trader_heavy_fallout"]
+        ]
+    }],
+    "burst_pattern": [0.0, 2.0],
+    "effects":
+    {
+        "muzzle_picking_behavior": "sequential",
+        "muzzle_effect": "trader_siege_frigate_planet_bombing_weapon_muzzle",
+        "hit_shield_impact_radius_t": 0.0775
+    }
+}

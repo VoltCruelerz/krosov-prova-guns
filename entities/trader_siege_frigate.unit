@@ -1,0 +1,247 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 76.034798,
+        "box": {
+            "center": [
+                0,
+                0.000001,
+                0
+            ],
+            "extents": [
+                39.717487,
+                29.298836,
+                71.626457
+            ]
+        },
+        "collision_rank": 1
+    },
+    "physics": {
+        "mass": 2000,
+        "can_move_linear": true,
+        "max_linear_speed": 525,
+        "time_to_max_linear_speed": 4.038462,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1,
+            2
+        ],
+        "can_move_angular": true,
+        "max_angular_speed": 25.479017,
+        "time_to_max_angular_speed": 11.581371,
+        "max_bank_angle": 35,
+        "death_angular_speed_range": [
+            5,
+            10
+        ],
+        "linear_acceleration_angle": 90,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 131.25,
+        "time_to_strafe_max_linear_speed": 8.076923,
+        "strafe_max_linear_distance_spatial_radius_scalar": 3,
+        "strafe_start_angle": 0,
+        "strafe_stop_angle": 180,
+        "strafe_speed_start_angle": 10,
+        "strafe_max_start_turning_angle": 170
+    },
+    "hyperspace": {
+        "speed": 155000,
+        "charge_time": 5,
+        "charge_time_variance": 1,
+        "min_charge_angle": 10,
+        "max_charge_angle": 45
+    },
+    "move": {
+        "follow_distance": 417.934998
+    },
+    "attack": {
+        "attack_pattern_definitions": [
+            {
+                "type": "stop_and_fire"
+            }
+        ]
+    },
+    "ai": {
+        "priority_bonus_per_attack_target_type": {},
+        "behaviors": [
+            "auto_bomb_planet",
+            "auto_attack_non_threats",
+            "auto_attack_threats",
+            "auto_follow_attacking_units"
+        ],
+        "auto_follow_target_priority": 1,
+        "targets_to_ignore_filter_id": "strikecraft_and_torpedo_units"
+    },
+    "ai_attack_target": {
+        "attack_priority": 50,
+        "is_always_a_threat": true
+    },
+    "player_ai": {
+        "max_empire_owned_count_percentage": 0.05
+    },
+    "user_interface": {
+        "pip_type": "frigate",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "trader_siege_frigate_planet_bombing",
+                "mesh_point": "bomb",
+                "weapon_position": [
+                    -0.123181,
+                    -0.039317,
+                    9.604261
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        -21.510889,
+                        4.652254,
+                        9.604262
+                    ],
+                    [
+                        -21.323267,
+                        0.080413,
+                        9.604262
+                    ],
+                    [
+                        -21.046654,
+                        -4.562788,
+                        9.604262
+                    ],
+                    [
+                        20.668022,
+                        -4.989326,
+                        9.604259
+                    ],
+                    [
+                        21.355814,
+                        4.652254,
+                        9.604259
+                    ],
+                    [
+                        21.117887,
+                        -0.068709,
+                        9.604259
+                    ]
+                ],
+                "forward": [
+                    0,
+                    0,
+                    1
+                ],
+                "up": [
+                    0,
+                    1,
+                    0
+                ],
+                "yaw_arc": {
+                    "min_angle": 0,
+                    "max_angle": 0
+                },
+                "pitch_arc": {
+                    "min_angle": 0,
+                    "max_angle": 0
+                }
+            },
+            {
+                "weapon": "trader_siege_frigate_repurposed_nuke",
+                "mesh_point": "bomb",
+                "weapon_position": [
+                    -0.123181,
+                    -0.039317,
+                    9.604261
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        -0.123181,
+                        -0.039317,
+                        9.604261
+                    ]
+                ],
+                "forward": [
+                    0,
+                    0,
+                    1
+                ],
+                "up": [
+                    0,
+                    1,
+                    0
+                ],
+                "yaw_arc": {
+                    "min_angle": 0,
+                    "max_angle": 0
+                },
+                "pitch_arc": {
+                    "min_angle": 0,
+                    "max_angle": 0
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    },
+    "formation": {
+        "leader_priority": 0,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 3,
+                "group": 1
+            }
+        }
+    },
+    "spawn_debris": {
+        "spawn_debris_time": 1,
+        "generic_group_name": "trader",
+        "generic_counts": {
+            "small_debris": [
+                7,
+                8
+            ]
+        }
+    },
+    "health": {
+        "release_time_after_death": 60,
+        "max_hull_points": 1150,
+        "hull_point_restore_rate": 0.333333,
+        "hull_armor": 10,
+        "max_shield_points": 575,
+        "shield_point_restore_rate": 1.666667,
+        "shield_mitigation": 1,
+        "experience_given_on_death": 36
+    },
+    "build": {
+        "build_time": 52,
+        "price": {
+            "credits": 620,
+            "metal": 170,
+            "crystal": 140
+        },
+        "prerequisites": [
+            [
+                "trader_unlock_siege_frigate"
+            ]
+        ],
+        "build_kind": "frigate",
+        "supply_cost": 12,
+        "build_group_id": "frigate"
+    },
+    "target_filter_unit_type": "frigate",
+    "tags": [
+        "frigate"
+    ],
+    "ship_roles": [
+        "bomb_planet",
+        "attack_ship"
+    ],
+    "skins": [
+        "trader_siege_frigate"
+    ],
+    "can_join_fleet": true
+}

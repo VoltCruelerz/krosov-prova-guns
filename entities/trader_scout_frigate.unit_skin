@@ -1,0 +1,107 @@
+{
+    "version": 0,
+    "skin_stages": [
+        {
+            "is_main_view_icon_visible_camera_distance": 12228.7005,
+            "min_camera_distance": 100,
+            "gui": {
+                "hud_icon": "trader_scout_frigate_hud_icon",
+                "hud_monochrome_icon": "trader_scout_frigate_main_view_icon",
+                "hud_button_icon": "trader_scout_frigate_hud_button_icon",
+                "hud_picture": "trader_scout_frigate_hud_picture",
+                "tooltip_icon": "trader_scout_frigate_tooltip_icon",
+                "name": "trader_scout_frigate_name",
+                "description": "trader_scout_frigate_description"
+            },
+            "unit_mesh": {
+                "mesh": "trader_scout_frigate",
+                "shader": "ship",
+                "is_shadow_blocker": true
+            },
+            "main_view_icon": {
+                "group": "ship",
+                "icon": "trader_scout_frigate_main_view_icon",
+                "selected_icon": "trader_scout_frigate_main_view_icon_selected",
+                "sub_selected_icon": "trader_scout_frigate_main_view_icon_sub_selected"
+            },
+            "effects": {
+                "exhaust_particle_effect": "exhaust_tech_small_01",
+                "hyperspace_effects": {
+                    "charge_effect": "Hyperspace_Tech_Frigate_ChargeUp",
+                    "charge_effect_between_stars": "Hyperspace_Tech_Frigate_ChargeUp_Interstellar",
+                    "charge_effect_destabalized": "Hyperspace_Tech_Frigate_ChargeUp_Unstable",
+                    "travel_effect": "Hyperspace_Tech_Frigate_Travel",
+                    "travel_effect_between_stars": "Hyperspace_Tech_Frigate_Travel_Interstellar",
+                    "travel_effect_destabalized": "Hyperspace_Tech_Frigate_Travel_Unstable",
+                    "exit_effect": "Hyperspace_Tech_Frigate_Exit",
+                    "exit_sound": "HYPERSPACE_EXIT"
+                },
+                "effect_alias_bindings": [
+                    ["trader_hangar_defense_structure_point_defense_autocannon_weapon_hit_hull",
+                    {
+                        "particle_effect": "trader_frigate_point_defense_autocannon_weapon_hit_hull",
+                        "sounds": [
+                        "WEAPONIMPACT_PHYSICALLIGHT_HITHULL",
+                            "WEAPONIMPACT_PHYSICALLIGHT_HITHULL_01",
+                            "WEAPONIMPACT_PHYSICALLIGHT_HITHULL_02",
+                            "WEAPONIMPACT_PHYSICALLIGHT_HITHULL_03",
+                            "WEAPONIMPACT_PHYSICALLIGHT_HITHULL_04"
+                        ]
+                    }],
+                    ["trader_hangar_defense_structure_point_defense_autocannon_weapon_hit_shield",
+                    {
+                        "particle_effect": "trader_frigate_point_defense_autocannon_weapon_hit_shield",
+                        "sounds": [
+                        "WEAPONIMPACT_GENERICLIGHT_HITSHIELDS"]
+                    }],
+                    ["trader_hangar_defense_structure_point_defense_autocannon_weapon_muzzle",
+                    {
+                        "particle_effect": "Weapon_Tech_AutoCannonFrigate_Muzzle",
+                        "sounds": [
+                        "WEAPON_TECHCAPITALAUTOCANNONLIGHT_MUZZLE",
+                            "WEAPON_TECHCAPITALAUTOCANNONLIGHT_MUZZLE_ALT1",
+                            "WEAPON_TECHCAPITALAUTOCANNONLIGHT_MUZZLE_ALT2"
+                        ]
+                    }],
+                    ["trader_hangar_defense_structure_point_defense_autocannon_weapon_projectile_travel",
+                    {
+                        "particle_effect": "trader_frigate_point_defense_autocannon_weapon_projectile_travel"
+                    }]
+                ],
+                "shield_effect": "trader_scout_frigate"
+            },
+            "sounds": {
+                "move_sounds": {
+                    "engine": "ENGINE_TECHCORVETTESHIP",
+                    "hyperspace_travel": "HYPERSPACE_TRAVEL",
+                    "hyperspace_charging": "HYPERSPACE_CHARGEUP"
+                },
+                "dialogue": {
+                    "spawned": [
+                        "FRIGATE_TECHSCOUT_ONCREATION"
+                    ],
+                    "selected": [
+                        "FRIGATE_TECHSCOUT_ONSELECTED_0",
+                        "FRIGATE_TECHSCOUT_ONSELECTED_1",
+                        "FRIGATE_TECHSCOUT_ONSELECTED_2",
+                        "FRIGATE_TECHSCOUT_ONSELECTED_3"
+                    ],
+                    "order_issued": [
+                        "FRIGATE_TECHSCOUT_ONGENERALORDERISSUED_0",
+                        "FRIGATE_TECHSCOUT_ONGENERALORDERISSUED_1",
+                        "FRIGATE_TECHSCOUT_ONGENERALORDERISSUED_2"
+                    ],
+                    "attack_order_issued": [
+                        "FRIGATE_TECHSCOUT_ONATTACKORDERISSUED_0",
+                        "FRIGATE_TECHSCOUT_ONATTACKORDERISSUED_1",
+                        "FRIGATE_TECHSCOUT_ONATTACKORDERISSUED_2"
+                    ],
+                    "hyperspace_charge_started": [
+                        "FRIGATE_TECHSCOUT_ONSTARTPHASEJUMP_0"
+                    ]
+                }
+            },
+            "death_sequence_group": "corvette0"
+        }
+    ]
+}
