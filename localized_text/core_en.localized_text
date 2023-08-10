@@ -12725,6 +12725,10 @@
             "PD Autocannon"
         ],
         [
+            "weapon_name.attack_point_defense_autocannon",
+            "PD Autocannon"
+        ],
+        [
             "weapon_name.repurposed_nuke",
             "Bombardment Missile"
         ]
