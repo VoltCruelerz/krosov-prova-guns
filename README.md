@@ -12,4 +12,4 @@
 **NOTE:** This mod requires [Greed](https://github.com/VoltCruelerz/Greed).
 
 1. Download the latest release from [here](https://github.com/VoltCruelerz/krosov-prova-guns\/releases)
-2. Extract the zipped contents to `C:\Users\VoltC\AppData\Local\sins2\mods\`, so that this file's path is `C:\Users\VoltC\AppData\Local\sins2\mods\krosov-prova-guns\README.md`
+2. Extract the zipped contents to `C:\Users\YOUR_USER\AppData\Local\sins2\mods\`, so that this file's path is `C:\Users\YOUR_USER\AppData\Local\sins2\mods\krosov-prova-guns\README.md`
