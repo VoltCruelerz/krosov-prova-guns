@@ -4,8 +4,8 @@
     "url": "https://github.com/VoltCruelerz/krosov-prova-guns",
     "description": "Adds S2S missiles to Krosov and a PD gun to Prova.",
     "version": "1.0.0",
-    "sinsVersion": "1.14.3.0",
-    "greedVersion": "1.1.0",
+    "sinsVersion": "1.15.1.0",
+    "greedVersion": "1.4.0",
     "dependencies": [],
     "conflicts": [],
     "priority": 10

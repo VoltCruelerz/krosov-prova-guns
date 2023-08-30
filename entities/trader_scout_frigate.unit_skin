@@ -39,7 +39,7 @@
                 "effect_alias_bindings": [
                     ["trader_hangar_defense_structure_point_defense_autocannon_weapon_hit_hull",
                     {
-                        "particle_effect": "trader_frigate_point_defense_autocannon_weapon_hit_hull",
+                        "particle_effect": "PD_autocannon_impact",
                         "sounds": [
                         "WEAPONIMPACT_PHYSICALLIGHT_HITHULL",
                             "WEAPONIMPACT_PHYSICALLIGHT_HITHULL_01",
@@ -50,7 +50,7 @@
                     }],
                     ["trader_hangar_defense_structure_point_defense_autocannon_weapon_hit_shield",
                     {
-                        "particle_effect": "trader_frigate_point_defense_autocannon_weapon_hit_shield",
+                        "particle_effect": "PD_autocannon_impact",
                         "sounds": [
                         "WEAPONIMPACT_GENERICLIGHT_HITSHIELDS"]
                     }],
